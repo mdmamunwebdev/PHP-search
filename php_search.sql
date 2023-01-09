@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Jan 09, 2023 at 09:03 PM
+-- Generation Time: Jan 09, 2023 at 10:17 PM
 -- Server version: 10.4.27-MariaDB
 -- PHP Version: 8.2.0
 
@@ -40,9 +40,9 @@ CREATE TABLE `products` (
 --
 
 INSERT INTO `products` (`id`, `product_name`, `product_price`, `product_category`, `product_image`) VALUES
-(1, 'Meat Feast', '500', 'Cheese', 'no image'),
-(2, 'Chicken ', '55', 'Pepperoni', 'no image'),
-(3, 'Preperoni', '80', 'Pineapple', 'no image');
+(1, 'Meat Feast', '500', 'Cheese', 'https://www.effortlessfoodie.com/wp-content/uploads/2022/02/meat-feast-pizza-4.jpg'),
+(2, 'Chicken ', '55', 'Pepperoni', 'https://spiceeats.com/wp-content/uploads/2021/05/Simple-Chicken-Fry-500x375.jpg'),
+(3, 'Preperoni', '80', 'Pineapple', 'https://previews.123rf.com/images/bbtreesubmission/bbtreesubmission1810/bbtreesubmission181000461/109286486-peperoni-pizza.jpg');
 
 --
 -- Indexes for dumped tables
