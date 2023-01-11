@@ -42,7 +42,7 @@ CREATE TABLE `products` (
 INSERT INTO `products` (`id`, `product_name`, `product_price`, `product_category`, `product_image`) VALUES
 (1, 'Meat Feast', '500', 'Cheese', 'https://www.effortlessfoodie.com/wp-content/uploads/2022/02/meat-feast-pizza-4.jpg'),
 (2, 'Chicken ', '55', 'Pepperoni', 'https://spiceeats.com/wp-content/uploads/2021/05/Simple-Chicken-Fry-500x375.jpg'),
-(3, 'Preperoni', '80', 'Pineapple', 'https://previews.123rf.com/images/bbtreesubmission/bbtreesubmission1810/bbtreesubmission181000461/109286486-peperoni-pizza.jpg');
+(3, 'Preperoni', '80', 'Pineapple', 'https://guiltyeats.com/files/image-exchange/2016/04/ie_35638-1.jpeg');
 
 --
 -- Indexes for dumped tables
