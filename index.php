@@ -9,14 +9,14 @@
 </head>
 <body>
 
-  <main>
+  <main style="margin-bottom: 5px;">
       <section class="search-section">
 
         <!--Category Search-->
         <div>
           <h1>Category Search</h1>
 
-          <form action="search-by-category.php" method="post">
+          <form action="" method="post">
             <fieldset>
               <legend>Search</legend> <br/><br/>
 
@@ -28,7 +28,7 @@
                 <option value="Pineapple">Pineapple</option>
               </select>
 
-              <input type="submit" value="Submit">
+              <input type="submit" value="Submit" name="category_btn"/>
               <input type="reset" value="Clear">
             </fieldset>
           </form>
@@ -39,14 +39,14 @@
         <div>
           <h1>Open Text Search</h1>
 
-          <form action="search-by-name.php" method="post">
+          <form action="" method="post">
             <fieldset>
               <legend>Search</legend> <br><br>
 
               <label for="Search">Search: </label>
               <input type="text"  name="product_name" id="Search" placeholder="Search By Product Name .." required />
 
-              <input type="submit" value="Submit">
+              <input type="submit" value="Submit" name="name_btn"/>
               <input type="reset" value="Clear">
             </fieldset>
           </form>
@@ -57,7 +57,7 @@
         <div>
           <h1>Sort</h1>
 
-          <form action="search-by-order.php" method="post">
+          <form action="" method="post">
             <fieldset>
               <legend>Search</legend> <br/><br/>
 
@@ -69,7 +69,7 @@
               <input type="radio" name="order" value="product_price" id="Price" required />
               <label for="Price">Price</label> <br><br>
 
-              <input type="submit" value="Submit">
+              <input type="submit" value="Submit" name="order_btn"/>
               <input type="reset" value="Clear">
             </fieldset>
           </form>
@@ -79,6 +79,20 @@
       </section>
   </main>
 
+  <?php
+
+      if( isset($_POST['category_btn']) ) {
+          require_once "search-by-category.php";
+      }
+      elseif( isset($_POST['name_btn']) ) {
+          require_once "search-by-name.php";
+      }
+      elseif( isset($_POST['order_btn']) )  {
+          require_once "search-by-order.php";
+      }
+
+  ?>
+  <a href="#">Home</a>
 </body>
 </html>
 
