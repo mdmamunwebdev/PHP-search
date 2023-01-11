@@ -9,8 +9,8 @@
 </head>
 <body>
 
-  <main style="margin-bottom: 5px;">
-      <section class="search-section">
+  <main >
+      <section class="search-section" style="margin-bottom: 5px;">
 
         <!--Category Search-->
         <div>
@@ -77,21 +77,24 @@
         <!--/ Order By Search End-->
 
       </section>
+
+      <section class="result-section">
+        <?php
+
+          if( isset($_POST['category_btn']) ) {
+              require_once "search-by-category.php";
+          }
+          elseif( isset($_POST['name_btn']) ) {
+              require_once "search-by-name.php";
+          }
+          elseif( isset($_POST['order_btn']) )  {
+              require_once "search-by-order.php";
+          }
+
+        ?>
+      </section>
   </main>
 
-  <?php
-
-      if( isset($_POST['category_btn']) ) {
-          require_once "search-by-category.php";
-      }
-      elseif( isset($_POST['name_btn']) ) {
-          require_once "search-by-name.php";
-      }
-      elseif( isset($_POST['order_btn']) )  {
-          require_once "search-by-order.php";
-      }
-
-  ?>
   <a href="#">Home</a>
 </body>
 </html>
